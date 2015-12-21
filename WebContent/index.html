@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script>
+	$(function() {
+		$('.tab_slideMenu0').click(function() {
+			$('.slideMenu1').removeClass('in');
+			$('.slideMenu2').removeClass('in');
+			$('.slideMenu3').removeClass('in');
+			$('.slideMenu4').removeClass('in');
+			$('.slideMenu5').removeClass('in');
+		});
+		$('.tab_slideMenu1').click(function() {
+			$('.slideMenu1').toggleClass('in');
+			$('.slideMenu2').removeClass('in');
+			$('.slideMenu3').removeClass('in');
+			$('.slideMenu4').removeClass('in');
+			$('.slideMenu5').removeClass('in');
+
+		});
+		$('.tab_slideMenu2').click(function() {
+			$('.slideMenu1').removeClass('in');
+			$('.slideMenu2').toggleClass('in');
+			$('.slideMenu3').removeClass('in');
+			$('.slideMenu4').removeClass('in');
+			$('.slideMenu5').removeClass('in');
+		});
+		$('.tab_slideMenu3').click(function() {
+			$('.slideMenu1').removeClass('in');
+			$('.slideMenu2').removeClass('in');
+			$('.slideMenu4').removeClass('in');
+			$('.slideMenu5').removeClass('in');
+			$('.slideMenu3').toggleClass('in');
+		});
+		$('.tab_slideMenu4').click(function() {
+			$('.slideMenu1').removeClass('in');
+			$('.slideMenu2').removeClass('in');
+			$('.slideMenu3').removeClass('in');
+			$('.slideMenu5').removeClass('in');
+			$('.slideMenu4').toggleClass('in');
+		});
+		$('.tab_slideMenu5').click(function() {
+			$('.slideMenu1').removeClass('in');
+			$('.slideMenu2').removeClass('in');
+			$('.slideMenu4').removeClass('in');
+			$('.slideMenu3').removeClass('in');
+			$('.slideMenu5').toggleClass('in');
+		});
+	});
+</script>
+<title></title>
+<style>
+body, html, div {
+	margin: 0;
+	padding: 0px;
+
+	/* overflow: hidden; */
+}
+
+#navbar {
+	background-color: #eeeeee;
+	height: 50px;
+	width: 957px;
+	margin: 0px;
+	border-bottom: 1px solid #444444;
+}
+
+#navbarin {
+	font-size: 36px;
+	font-family: arial;
+	font-weight: bold;
+	padding-left:28px;
+}
+
+img {
+	padding: 5px;
+}
+
+#container {
+	width: 960px;
+	height: 815px;
+	background-color: white;
+	border: 1px solid #444444;
+}
+
+#topmenu {
+	float: left;
+	width: 50px;
+	height: 765px;
+	background-color: black;
+	color: white;
+}
+
+#contact {
+	float: left;
+	width: 150px;
+	height: 105px;
+}
+
+#menudiv1, #menudiv2, #menudiv3, #menudiv4, #menudiv5 {
+	width: 864px;
+	height: 763px;
+}
+
+iframe {
+	width: 860px;
+	height: 763px;
+	border: 0;
+}
+
+/*slideMenu*/
+.slideMenu1 {
+	left: -865px;
+	top: 50px;
+	width: 864px;
+	height: 763px;
+	border: 1px solid #aaa;
+	position: absolute;
+	background: white;
+	transition: 0.6s ease;
+	box-shadow: 1px 1px 1px #ddd;
+		z-index:500;
+	
+}
+
+.slideMenu2 {
+	left: -865px;
+	top: 50px;
+	width: 864px;
+	height: 763px;
+	border: 1px solid #aaa;
+	position: absolute;
+	background: white;
+	transition: 0.6s ease;
+	box-shadow: 1px 1px 1px #ddd;
+		z-index:500;
+	
+}
+.slideMenu3 {
+	left: -865px;
+	top: 50px;
+	width: 864px;
+	height: 763px;
+	border: 1px solid #aaa;
+	position: absolute;
+	background: white;
+	transition: 0.6s ease;
+	box-shadow: 1px 1px 1px #ddd;
+	z-index:500;
+}
+.slideMenu4 {
+	left: -865px;
+	top: 50px;
+	width: 864px;
+	height: 763px;
+	border: 1px solid #aaa;
+	position: absolute;
+	background: white;
+	transition: 0.6s ease;
+	box-shadow: 1px 1px 1px #ddd;
+	z-index:500;
+}
+.slideMenu5 {
+	left: -865px;
+	top: 50px;
+	width: 864px;
+	height: 763px;
+	border: 1px solid #aaa;
+	position: absolute;
+	background: white;
+	transition: 0.1s ease;
+	box-shadow: 1px 1px 1px #ddd;
+	z-index:500;
+}
+
+.slideMenu1.in,.slideMenu2.in,.slideMenu3.in,.slideMenu4.in,.slideMenu5.in {
+	transform: translateX(915px);
+	z-index: 100;
+	transition: 0.6s ease;
+}
+
+#slideMenuDiv0 {
+	position: absolute;
+	left: -2px;
+	top: 52px;
+	 z-index: 610;
+}
+
+#slideMenuDiv1,#slideMenuDiv2,#slideMenuDiv3 ,#slideMenuDiv4, #slideMenuDiv5{
+	margin-right:10px;
+
+	position: absolute;
+	left: 862px;
+}
+#slideMenuDiv1{
+	top: 203px;
+		 z-index: 610;
+}
+#slideMenuDiv2 {
+	top: 102px;
+		 z-index: 609;
+}
+#slideMenuDiv3 {
+
+	top: 304px;
+		 z-index: 608;
+}
+#slideMenuDiv4{
+
+	top: 405px;
+		 z-index: 607;
+}
+#slideMenuDiv5{
+
+	top: 506px;
+		 z-index: 606;
+}
+
+.menuselect {
+	font-size: 20px;
+	font-weight: bold;
+	-webkit-writing-mode: vertical-rl;
+	-moz-writing-mode: vertical-rl;
+	-ms-writing-mode: tb-rl;
+	-ms-writing-mode: vertical-rl;
+	writing-mode: vertical-rl;
+}
+
+.menuselect a {
+	width: 50px;
+	height: 100px;
+	position: relative;
+	background: #ddd;
+	background-image: linear-gradient(to left, #fff, #ddd);
+	float: left;
+	text-decoration: none;
+	color: #444;
+	text-shadow: 0 2px 0 rgba(255, 255, 255, .8);
+	border-radius: 0 5px 5px 0;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, .4);
+	text-align: center;
+	border : 1px solid #444444;
+	padding-right: 10px;
+}
+
+.menuselect a:hover, #menuselect a:hover::after, #menuselect a:focus,
+	#menuselect a:focus::after {
+	
+}
+
+.menuselect a:focus {
+	outline: 0;
+}
+#adminloginicon{
+margin-top:680px;
+width:50px;
+padding:0;
+}
+</style>
+
+
+</head>
+
+<div id="container">
+
+	<nav id="navbar">
+		<div class="container2">
+			<div id="navbarin">
+				POS SYSTEM
+			</div>
+
+		</div>
+	</nav>
+	<div id="topmenu">
+	</div>
+	<div id="contact"><iframe src="sub/posMain.jsp"></iframe></div>
+	<br>
+
+
+</div>
+
+<div id="slideMenuDiv0">
+	<span class="menuselect"> <a href="#" class=tab_slideMenu0>포스화면</a>
+	</span>
+</div>
+<div class=slideMenu1>
+	<div id="menudiv1">
+		<div id="iframe1">
+			<iframe src="sub/orders.jsp"></iframe>
+		</div>
+	</div>
+	<div id="slideMenuDiv1">
+		<span class="menuselect"> <a href="#" class=tab_slideMenu1>발주관리</a>
+		</span>
+	</div>
+</div>
+
+<div class=slideMenu2>
+	<div id="menudiv2">
+		<div id="iframe2">
+			<iframe src="sub/addstorelist.jsp"></iframe>
+		</div>
+	</div>
+	<div id="slideMenuDiv2">
+		<span class="menuselect"> <a href="#" class=tab_slideMenu2>상품등록</a>
+		</span>
+	</div>
+</div>
+<div class=slideMenu3>
+	<div id="menudiv3">
+		<div id="iframe3">
+			<iframe src="sub/workChange.jsp">교대</iframe>
+		</div>
+	</div>
+	<div id="slideMenuDiv3">
+		<span class="menuselect"> <a href="#" class=tab_slideMenu3>교대/시제</a>
+		</span>
+	</div>
+</div>
+<div class=slideMenu4>
+	<div id="menudiv4">
+		<div id="iframe4">
+			<iframe src="sub/userRegister.jsp"></iframe>
+		</div>
+	</div>
+	<div id="slideMenuDiv4">	
+		<span class="menuselect"> <a href="#" class=tab_slideMenu4>인원관리</a>
+		</span>
+	</div>
+</div>
+<div class=slideMenu5>
+	<div id="menudiv5">
+		<div id="iframe5">
+			<iframe src="sub/receiptlistsellall.jsp"></iframe>
+		</div>
+	</div>
+	<div id="slideMenuDiv5">	
+		<span class="menuselect"> <a href="#" class=tab_slideMenu5>매출관리</a>
+		</span>
+	</div>
+</div>
+
+
+</body>
+</html>
